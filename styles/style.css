@@ -1,17 +1,17 @@
 header {
-  height: 293px;
-  padding: 92px 24px 96px 24px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   justify-items: center;
   align-items: center;
+  height: 293px;
+  padding: 92px 24px 96px 24px;
   font-size: 18px;
 }
 
 .header__links-list {
   display: flex;
-  width: 392px;
   justify-content: space-between;
+  width: 392px;
   list-style: circle;
 }
 
@@ -22,14 +22,11 @@ header {
 .header__link {
   margin-right: 8px;
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .header__link_active {
   border-style: none;
-}
-
-.header__logo {
 }
 
 .header__logo-image {
@@ -47,5 +44,81 @@ address {
 
 .header__adress a {
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.cover {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 165px 50px 50px 50px;
+}
+
+.overlay {
+  background-color: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-bottom: 132px;
+}
+
+.aligned-text-center {
+  text-align: center;
+  line-height: 135%;
+}
+
+.aligned-text-right {
+  text-align: right;
+  line-height: 105%;
+  letter-spacing: 0.3em;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.cover__description-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  word-spacing: 0.84em;
+  margin-left: 28px;
+}
+
+.bet-button {
+  padding: 12px 32px 12px 32px;
+  background-color: transparent;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  text-wrap: nowrap;
 }
