@@ -122,3 +122,72 @@ address {
   border: 1px solid white;
   text-wrap: nowrap;
 }
+
+.lots {
+  padding: 179px 24px 0 24px;
+}
+
+.lots__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-top: 2px;
+}
+
+.lots__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 563px;
+  gap: 25px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  z-index: 1;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 51px 40px 0 40px;
+}
+
+.card__text{
+  z-index: 1;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: rgb(255, 255, 255);
+  padding: 0 40px 48px 40px;
+}
+
+.lots__look-more-link {
+  align-self: end;
+  margin-left: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
