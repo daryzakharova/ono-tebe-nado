@@ -20,7 +20,7 @@ header {
 }
 
 .header__link {
-  margin-right: 8px;
+  margin-right: 6px;
   text-decoration: none;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -43,8 +43,7 @@ address {
 }
 
 .header__adress a {
-  text-decoration: none;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -244,4 +243,36 @@ address {
   grid-row: 1/2;
   font-size: 20px;
   line-height: 1.2em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 149px 1fr;
+  padding: 180px 50px 88px 50px;
+  font-size: 18px;
+}
+
+.footer__adress {
+  line-height: 1.36em;
+  text-underline-offset: 4px;
+}
+
+.footer__links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  text-underline-offset: 4px;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: end;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  height: 48px;
+  width: 48px;
 }
