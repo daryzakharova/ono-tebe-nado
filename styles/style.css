@@ -3,8 +3,7 @@ header {
   grid-template-columns: 1fr 148px 1fr;
   justify-items: center;
   align-items: center;
-  height: 293px;
-  padding: 92px 24px 96px 24px;
+  padding: 92px 24px 92px 24px;
   font-size: 18px;
 }
 
@@ -115,6 +114,7 @@ address {
 .bet-button {
   padding: 12px 32px 12px 32px;
   background-color: transparent;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -123,7 +123,7 @@ address {
 }
 
 .lots {
-  padding: 179px 24px 0 24px;
+  padding: 178px 24px 0 24px;
 }
 
 .lots__heading {
@@ -136,7 +136,6 @@ address {
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 563px;
   gap: 25px;
   padding-top: 28px;
   padding-bottom: 30px;
@@ -193,14 +192,11 @@ address {
 .about__column {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 595px;
-  gap: 10px;
-  padding: 146px 24px 0 24px;
+  gap: 12px;
+  padding: 149px 24px 0 24px;
 }
 
 .about__logo {
-  grid-column: 1/2;
-  grid-row: 1/2;
   height: 240px;
   width: 240px;
   justify-self: center;
@@ -218,29 +214,16 @@ address {
 }
 
 .about__title {
-  grid-column: 2/3;
-  grid-row: 1/2;
   font-size: 40px;
   text-transform: uppercase;
   padding-top: 136px;
+  padding-bottom: 100px;
 }
 
 .about__text {
-  display: block;
-  align-self: center;
-  margin-top: 90px;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  font-size: 20px;
-  line-height: 1.2em;
-}
-
-.about__text-end {
-  display: block;
-  align-self: end;
-  margin-bottom: 1px;
-  grid-column: 2/3;
-  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   font-size: 20px;
   line-height: 1.2em;
 }
