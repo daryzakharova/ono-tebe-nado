@@ -248,6 +248,10 @@ address {
   text-underline-offset: 4px;
 }
 
+.footer__link_active {
+  text-decoration: none;
+}
+
 .footer__social-list {
   display: flex;
   justify-content: end;
