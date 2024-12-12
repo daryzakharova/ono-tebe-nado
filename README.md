@@ -1,1 +1,1 @@
-https://github.com/daryzakharova/ono-tebe-nado-fb
+https://github.com/daryzakharova/ono-tebe-nado-fd
